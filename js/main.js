@@ -21,6 +21,8 @@ function inout (ing,out,disp) {
     })
 }
 
+carga()
+
 gira('#opt1')
 gira('#opt2')
 gira('#opt3')
@@ -54,4 +56,23 @@ function gira (opcion){
 
         }, "600");    
     })
+}
+
+function carga(){
+    const images = [1,1,2,2,3,3,4,4,5,5,6,6]
+    let lista = [0,1,2,3,4,5,6,7,8,9,10,11];
+    lista = lista.sort(function() {return Math.random() - 0.5});
+    let orden = []
+    let i = 0
+    for (const num of lista) {
+        orden[num]=images[i]
+        i++
+    }
+    for (let index = 1; index < 13; index++) {
+        let opciones = document.querySelector(`#opt${index}`)
+        opciones.innerHTML=(`
+            <h2>${index}</h2>
+            <img class="d-none img-fluid" src="./img/img${orden[index-1]}.jpg" alt="">`
+        )
+    }
 }
