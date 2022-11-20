@@ -22,6 +22,16 @@
 
 gira('#opt1')
 gira('#opt2')
+gira('#opt3')
+gira('#opt4')
+gira('#opt5')
+gira('#opt6')
+gira('#opt7')
+gira('#opt8')
+gira('#opt9')
+gira('#opt10')
+gira('#opt11')
+gira('#opt12')
 
 function gira (opcion){
     const opt = document.querySelector(opcion)

@@ -100,6 +100,7 @@ p {
 
 
 .stand{
+    overflow: hidden;
     margin: 0.2rem;
     background-color: #0a3e6f;
     border-radius: 50px;
