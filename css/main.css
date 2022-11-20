@@ -71,7 +71,7 @@ p {
     font-size: 1.5rem;
 }
 
-#step-1,#step-2,#step-{
+#step-1,#step-2,#step-3{
     opacity: 0;
 }
 
@@ -100,10 +100,15 @@ p {
 
 
 .stand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%!important;
+    height: auto;
     overflow: hidden;
     margin: 0.2rem;
     background-color: #0a3e6f;
-    border-radius: 50px;
+    border-radius: 2rem;
     border: 1px solid #2972B6;
 }
 
@@ -112,12 +117,7 @@ p {
 }
 
 .stand h2{
-    font-size: 3rem;
-    margin-top: 25%;
-}
-
-.stand:hover{
-    background-color: #b45caa;
+    font-size: 2rem;
 }
 
 .fila{

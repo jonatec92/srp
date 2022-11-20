@@ -1,24 +1,25 @@
-// inout('#step-1','#step-0','#iniciar')
-// inout('#step-2','#step-1','#sig-1')
+inout('#step-1','#step-0','#iniciar')
+inout('#step-2','#step-1','#sig-1')
+inout('#step-3','#step-2','#sig-2')
 
-// function inout (ing,out,disp) {
-//     let diparador = document.querySelector(`${disp}`)
-//     let entra = document.querySelector(`${ing}`)
-//     let sale = document.querySelector(`${out}`)
+function inout (ing,out,disp) {
+    let diparador = document.querySelector(`${disp}`)
+    let entra = document.querySelector(`${ing}`)
+    let sale = document.querySelector(`${out}`)
 
-//     diparador.addEventListener("click", () => {
-//         sale.classList.add("desaparece")
-//         sale.classList.remove("aparece")
-//         setTimeout(() => {
-//             sale.classList.add("d-none");
-//             entra.classList.remove("d-none");
-//             setTimeout(() => {
-//                 entra.classList.add("aparece");
-//             }, "300")
+    diparador.addEventListener("click", () => {
+        sale.classList.add("desaparece")
+        sale.classList.remove("aparece")
+        setTimeout(() => {
+            sale.classList.add("d-none");
+            entra.classList.remove("d-none");
+            setTimeout(() => {
+                entra.classList.add("aparece");
+            }, "300")
             
-//         }, "200")
-//     })
-// }
+        }, "200")
+    })
+}
 
 gira('#opt1')
 gira('#opt2')
