@@ -29,7 +29,7 @@ body{
 
 .gira-in{
     transform: rotateY(0deg);
-    transition: transform 1500ms;
+    transition: transform 600ms;
 }
 
 .gira-out{
@@ -71,7 +71,7 @@ p {
     font-size: 1.5rem;
 }
 
-#step-1,#step-2,#step-3{
+#step-1,#step-2,#step-3,#step-4,#step-5,#step-6,#step-7,#step-8,#step-9,#step-10,#step-11,#step-12{
     opacity: 0;
 }
 
@@ -122,4 +122,35 @@ p {
 
 .fila{
     height: 25%;
+}
+
+.choice{
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.choice p{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.buttons{
+    position: relative;
+    top: -1.5rem;
+}
+
+input{
+    color: #001D4F;
+    text-align: center;
+}
+
+.letter p{
+    font-size: 1.8rem;
 }

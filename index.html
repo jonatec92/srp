@@ -17,7 +17,7 @@
     <div class="container contenedor d-flex justify-content-center align-items-center">
         <div class="contenedor d-flex flex-column justify-content-evenly align-items-center" id="step-0">
             <h1>😬​Bienvenida!!</h1>
-            <p>Hola Mica, este es un juego 🎮 que arme, espero que te guste😉​!</p>
+            <p>Hola Mica, este es un juego 🎮 que arme para vos, espero que te guste😉​!</p>
             <button type="button" class="btn btn-primary" id="iniciar">Iniciar</button>
         </div>
         <div class="d-none contenedor d-flex flex-column justify-content-evenly align-items-center" id="step-1">
@@ -39,30 +39,107 @@
             <div class="d-flex flex-column">
                 <div class="container text-center tabla p-4">
                     <div class="row fila">
-                        <div class="col stand" id="opt1"></div>
-                        <div class="col stand" id="opt2"></div>
-                        <div class="col stand" id="opt3"></div>
+                        <div class="col stand" onclick="verifica(1),gira('#opt-1')" id="opt-1"></div>
+                        <div class="col stand" onclick="verifica(2),gira('#opt-2')" id="opt-2"></div>
+                        <div class="col stand" onclick="verifica(3),gira('#opt-3')" id="opt-3"></div>
                     </div>
                     <div class="row fila">
-                        <div class="col stand" id="opt4"></div>
-                        <div class="col stand" id="opt5"></div>
-                        <div class="col stand" id="opt6"></div>
+                        <div class="col stand" onclick="verifica(4),gira('#opt-4')" id="opt-4"></div>
+                        <div class="col stand" onclick="verifica(5),gira('#opt-5')" id="opt-5"></div>
+                        <div class="col stand" onclick="verifica(6),gira('#opt-6')" id="opt-6"></div>
                     </div>
                     <div class="row fila">
-                        <div class="col stand" id="opt7"></div>
-                        <div class="col stand" id="opt8"></div>
-                        <div class="col stand" id="opt9"></div>
+                        <div class="col stand" onclick="verifica(7),gira('#opt-7')" id="opt-7"></div>
+                        <div class="col stand" onclick="verifica(8),gira('#opt-8')" id="opt-8"></div>
+                        <div class="col stand" onclick="verifica(9),gira('#opt-9')" id="opt-9"></div>
                     </div>
                     <div class="row fila">
-                        <div class="col stand" id="opt10"></div>
-                        <div class="col stand" id="opt11"></div>
-                        <div class="col stand" id="opt12"></div>
+                        <div class="col stand" onclick="verifica(10),gira('#opt-10')" id="opt-10"></div>
+                        <div class="col stand" onclick="verifica(11),gira('#opt-11')" id="opt-11"></div>
+                        <div class="col stand" onclick="verifica(12),gira('#opt-12')" id="opt-12"></div>
                     </div>
                 </div>
             </div>
+            <div class="d-none choice" id="msg">
+                <p>🔥​🔥​ GANASTE!! 🔥🔥​​<br>felicidades la rompiste!😎​<br>podes jugar otra vez ​🔄​ o bien avanzar para ir tras el premio🏆​​​🔥</p>
+                <div class="buttons">
+                <button type="button" class="btn btn-primary" id="again">Otra vez</button>
+                <button type="button" class="btn btn-primary" id="sig-3">Siguiente</button>
+                </div>
+            </div>
+        </div>
+        <div class="d-none choice" id="step-4">
+            <h1 class="mb-4">​​💪​El desafio​</h1>
+            <p>🔥Estas muy cerca de ganar el premio!​​ 😲😲😲<br>El desfio es muy simple 😉​, solo tenes que sacarte una foto 📸​ con jona sosteniendo el celu 📳​ en tu pecho mostrando una imagen 🖼️​, cuando lo cumplas jona te va a dar un codigo para 💥​💥ingresar👇👇​</p>
+            <div class="buttons">
+            <a href="./img/boca.jpg" target="_blank"><button type="button" class="btn btn-primary" id="imagen">Imagen</button></a>
+            <button type="button" class="btn btn-primary" id="sig-4">Codigo</button>
+            </div>
+        </div>
+        <div class="d-none choice" id="step-5">
+            <h1 class="mb-4">​​💪​El desafio</h1>
+            <p>🔥🔥Ingresa el codigo para saber cual es el premio!!🔥🔥​​ ​🤪​😬​😱​😝​😎​<br>
+                Codigo:<input class="mt-3" type="text" id="codigo1">
+                <span class="mt-3" id="resul">...</span>
+            ​</p>
+            <div class="buttons">
+            <a href="./img/boca.jpg" target="_blank"><button type="button" class="btn btn-primary" id="imagen">Imagen</button></a>
+            <button type="button" class="btn btn-primary" id="sig-5">Validar</button>
+            </div>
+        </div>
+        <div class="d-none choice" id="step-6">
+            <h1 class="mb-4">🔥​​​Felicidades</h1>
+            <p>🔥🔥Te felicito ganaste un llavero y una taza de STITCH!!🔥🔥​​ ​🤪​😬​😱​😝​😎​<br>Espero que te guste!😘​🤩​
+                <br><br>Si encontras otro Codigo...<input class="mt-3" type="text" id="codigo2">
+                <span class="mt-3" id="resul2">...</span>
+            ​</p>
+            <div class="buttons">
+            <button type="button" class="btn btn-primary" id="sig-6">Validar</button>
+            </div>
+        </div>
+        <div class="d-none choice letter" id="step-7">
+            <h1 class="mb-4">❣️​​Mika</h1>
+            <p>😬Ya tenemos 1 año! de que empezamos a salir, wow que loco no? 🤪 fue un año donde pasamos muchas cosas 🥴​ , cosas buenas y no tan buenas.. 😄​🤕​😡 peleas, muchas peleas jajaja pero creo que todo lo que pasamos nos hace llegar a donde hoy estamos...🙂​​</p>
+            <div class="buttons">
+            <button type="button" class="btn btn-primary" id="sig-7">Siguiente</button>
+            </div>
+        </div>
+        <div class="d-none choice letter" id="step-8">
+            <h1 class="mb-4">❣️​​Mika</h1>
+            <p>😬Sos super importante en mi vida!💖​ gracias por este año en que me tuviste que bancar 🤪​, se que no soy una persona facil de llevar, pero bueno vos te la buscaste 😎​😎​ jajajaj pero encerio gracias por todo lo que haces por mi y lo que das cada dia por mi...🙂​​</p>
+            <div class="buttons">
+            <button type="button" class="btn btn-primary" id="sig-8">Siguiente</button>
+            </div>
+        </div>
+        <div class="d-none choice letter" id="step-9">
+            <h1 class="mb-4">❣️​​Mika</h1>
+            <p>Espero que te guste esto que arme😎​💻​, me llevo varias horas de sueño 😴​🥱​, pero vale la pena!😁​ <br>❤️​​🔥Te quieroo muchisimooo Hermosa!!🔥​❤️​​​<br>ah!... vos que sabes coreano te dejo esto para ver si descubris que es..</p>
+            <div class="buttons">
+            <button type="button" class="btn btn-primary" id="sig-9">Siguiente</button>
+            </div>
+        </div>
+        <div class="d-none choice letter" id="step-10">
+            <h1 class="mb-4">❣️​​Mika</h1>
+            <p>❤️​​🔥내 여자친구가 되고 싶어?🔥​❤️​​​</p>
+            <div class="buttons">
+            <button type="button" class="btn btn-primary" id="sig-10">Traducir</button>
+            </div>
+        </div>
+        <div class="d-none choice letter" id="step-11">
+            <h1 class="mb-4">❣️​​Mika</h1>
+            <p>Queres ser mi novia?<br>❤️🔥🔥​❤️​​​</p>
+            <div class="buttons">
+            <button type="button" class="btn btn-primary" id="sig-11">Si!</button>
+            <button type="button" class="btn btn-primary" id="sig-12">Si!</button>
+            </div>
+        </div>
+        <div class="d-none choice letter" id="step-12">
+            <h1 class="mb-4">❣️Novios😎</h1>
+            <p>​🥰​🥰​😍​😍​🥰​🥰​​​<br>❤️🔥🔥​❤️​​​</p>
         </div>
     </div>
     <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
