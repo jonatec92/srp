@@ -38,7 +38,8 @@ body{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
     color: #b45caa;
     text-shadow: 1px 1px 2px white, -1px -1px 2px white, 2px 2px 1px white, -2px -2px 1px white;
 }
@@ -86,6 +87,7 @@ p {
 
 #step-2 h1,#step-3 h1{
     font-size: 2.3rem;
+    text-align: center;
 }
 
 .tabla{
@@ -138,12 +140,33 @@ p {
 .choice p{
     display: flex;
     flex-direction: column;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
+
+.choiceN{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.choiceN p{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+div.choiceN.aparece#step-4 p{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
 
 .buttons{
     position: relative;
-    top: -1.5rem;
+    top: -0.5rem;
 }
 
 input{
@@ -152,5 +175,5 @@ input{
 }
 
 .letter p{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }

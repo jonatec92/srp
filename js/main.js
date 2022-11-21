@@ -30,7 +30,7 @@ validar.addEventListener("click",()=>{
     if (codigo1.value == "AGUANTE-BOCA") {
         resul.innerText = ('😃​Correcto!😃​')
         inout('#step-6','#step-5','#sig-5')
-        validar.innerText = ("Reclamar")  
+        validar.innerText = ("Avanzar")  
     }else{
         resul.innerText=('​😭Codigo invalido!​😭​')
         codigo1.value=""
@@ -44,7 +44,7 @@ validar2.addEventListener("click",()=>{
     if (codigo2.value == "JYM") {
         resul2.innerText = ('😃​Correcto!😃​')
         inout('#step-7','#step-6','#sig-6')
-        validar.innerText = ("Ver")  
+        validar2.innerText = ("Ver")  
     }else{
         resul2.innerText=('​😭Codigo invalido!​😭​')
         codigo2.value=""
